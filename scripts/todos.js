@@ -22,7 +22,7 @@ async function loadTodos() {
     .filter((todo) => todo.userid == userSelect.value)
     .map((todo) => {
       const newTodo = todoCard.cloneNode(true);
-      newTodo.style.display = "block"
+      newTodo.style.display = "block";
       newTodo.querySelector("#category").textContent = todo.category;
       newTodo.querySelector("#description").textContent = todo.description;
       newTodo.querySelector("#deadline").textContent = todo.deadline;
