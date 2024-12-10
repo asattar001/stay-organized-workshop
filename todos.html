@@ -12,31 +12,42 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>To Do's</h1>
+    <header class="bg-success text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="h4 m-0">To-Do List</h1>
+        <nav>
+          <a href="index.html" class="text-white text-decoration-none fw-bold me-3">Home</a>
+          <a href="todos.html" class="text-white text-decoration-none fw-bold">New List</a>
+        </nav>
+      </div>
+    </header>
+    <main class="mt-4">
+      <div class="container">
+        <h1>To Do's</h1>
 
-      <select id="userSelect">
-        <option value="">Select....</option>
-      </select>
+        <select id="userSelect">
+          <option value="">Select....</option>
+        </select>
 
-      <section id="todoList">
-        <div class="card shadow-sm my-3" style="width: 100%; display: none" id="todoCard">
-          <div class="card-body">
-            <h5 class="card-title text-primary mb-3">
-              <span class="badge bg-primary me-2">Category</span>
-              <span id="category">Work Project</span>
-            </h5>
-            <p class="card-text text-muted mb-3" id="description">
-              Prepare quarterly report and update team on project progress
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="badge bg-danger"> Deadline: <span id="deadline">12/1/2024</span> </span>
+        <section id="todoList">
+          <div class="card shadow-sm my-3" style="width: 100%; display: none" id="todoCard">
+            <div class="card-body">
+              <h5 class="card-title text-primary mb-3">
+                <span class="badge bg-primary me-2">Category</span>
+                <span id="category">Work Project</span>
+              </h5>
+              <p class="card-text text-muted mb-3" id="description">
+                Prepare quarterly report and update team on project progress
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-danger"> Deadline: <span id="deadline">12/1/2024</span> </span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <a class="btn btn-success mt-2" href="new_todo.html">Add To Do's</a>
-    </div>
+        </section>
+        <a class="btn btn-success mt-2" href="new_todo.html">Add To Do's</a>
+      </div>
+    </main>
 
     <script src="scripts/api.js"></script>
     <script src="scripts/todos.js"></script>
