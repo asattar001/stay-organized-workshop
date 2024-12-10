@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  .container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  #userSelect {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  #todoList {
+    list-style-type: none;
+    padding: 0;
+  }
+  #todoList li {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  #todoList li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  #todoList li.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  .loading {
+    text-align: center;
+    color: #666;
+  }
