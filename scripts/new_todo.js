@@ -32,7 +32,7 @@ async function postData(data) {
   })
     .then((response) => {
       if (response.ok) {
-        window.location.href = "todos.html";
+        window.location.href = `todos.html?user=${document.getElementById("userSelect").value}`;
       }
     })
     .catch((error) => error);
