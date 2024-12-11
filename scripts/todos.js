@@ -1,5 +1,18 @@
 "use strict";
 
+window.onload = () => {
+  const urlParams = new URLSearchParams(location.search);
+  populateUsers()
+  .then(() => {
+    if (urlParams.get("user")) {
+      userSelect.value = urlParams.get("user");
+    }
+  })
+  .then(() => {
+    loadTodos();
+  })
+};
+
 const userSelect = document.getElementById("userSelect");
 const todoList = document.getElementById("todoList");
 const todoCard = document.querySelector("#todoCard");
@@ -36,4 +49,3 @@ userSelect.addEventListener("change", (event) => {
   loadTodos();
 });
 
-populateUsers();
